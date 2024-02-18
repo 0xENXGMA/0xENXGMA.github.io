@@ -10,6 +10,9 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/sergio-garrido-garc%C3%ADa-2964b710a/'   
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
