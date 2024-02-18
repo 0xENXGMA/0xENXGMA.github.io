@@ -1,0 +1,146 @@
+---
+---
+@import 'main';
+
+
+/* append your custom style below */
+body {
+    background: rgb(27, 27, 27);
+    background-color: rgb(27, 27, 27);
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+}
+
+search {
+    background-color: rgb(27, 27, 27);
+}
+
+#topbar-wrapper {
+    background-color: rgb(27, 27, 27);
+  }
+
+%button {
+    background-color: #1e1e1e;
+    &:hover {
+        background-color: #1e1e1e;
+      }
+}
+
+#sidebar .sidebar-bottom {
+    padding-left: 3.5rem;
+}
+
+
+code.highlighter-rouge {
+    background-color: rgb(49, 49, 49);
+    color: #e6e6e6;
+    font-weight: bold;
+}
+
+.code-header button:hover {
+    background-color: rgb(21, 21, 21);
+}
+
+.code-header button:not([timeout]):hover {
+    background-color: rgb(21, 21, 21);
+}
+
+.code-header button[timeout]:hover {
+    border-color: transparent;
+}
+
+%heading {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.post-preview::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
+    background-color: rgb(37, 37, 37);
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-mode]) #archives li:nth-child(2n+1), html[data-mode="dark"] #archives li:nth-child(2n+1) {
+      background-image: linear-gradient(to left, rgb(26, 26, 26), rgb(39, 39, 39), rgb(39, 39, 39), rgb(39, 39, 39), rgb(26, 26, 26));
+    }
+  }
+  
+
+
+.content a:not(.img-link) {
+    border-bottom: none;
+}  
+
+a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+html[data-mode="dark"] {
+    --clipboard-checked-color: #e8e8e8;
+}
+  
+a {
+    @extend %text-highlight;
+    &:hover {
+        color: rgb(30, 255, 0);
+    }
+  }
+
+  .post-tail-wrapper .post-meta a:not(:hover), .content a:not(.img-link) {
+    border-bottom: none;
+}
+
+%link-hover {
+    color: #fcfcfc !important;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.post-tag {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid var(--btn-border-color);
+    padding: 0 .4rem;
+    color: var(--text-muted-color);
+    line-height: 1.3rem;
+}
+
+.post-tags .post-tag:hover, .tag:hover {
+    background: rgb(37, 37, 37);
+    transition: background .35s ease-in-out;
+    border-radius: .5rem;
+    border: 1px solid var(--btn-border-color);
+}
+
+.post-tail-wrapper .share-wrapper .share-icons i {
+    color: rgb(102, 102, 102);
+}
+
+.post-tail-wrapper .share-wrapper -share-icons > :hover i {
+    color: rgb(240, 240, 240);
+}
+
+.tag {
+    border-radius: .7em;
+    padding: 6px 8px 7px;
+    margin-right: .8rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+    border: 1px solid var(--btn-border-color) !important;
+    box-shadow: 0 0 3px 0 var(--tag-shadow);
+  }
+
+#toc-wrapper {
+    --toc-highlight: #fcfcfc; /* Change this color to your desired highlight color */
+}
+
+
+
